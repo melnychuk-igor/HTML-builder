@@ -19,6 +19,6 @@ stdin.on('data', (data) => {
   writeStream.write(data);
 });
 
-process.on('SIGING', () => {
+process.on('SIGINT', () => {
   funcExit();
 });
