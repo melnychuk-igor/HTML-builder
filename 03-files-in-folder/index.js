@@ -19,14 +19,16 @@ readdir(pathFile, { withFileTypes: true }, (err, files) => {
             ' ' +
             '-' +
             ' ' +
-            (extname(item.name).slice(1)) +
+            extname(item.name).slice(1) +
             ' ' +
             '-' +
             ' ' +
-            stats.size / 1000 +
+            stats.size / 1024 +
             'kb'
         );
       });
     }
   });
 });
+
+createDir();
