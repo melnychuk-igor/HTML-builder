@@ -19,7 +19,7 @@ readdir(pathFile, { withFileTypes: true }, (err, files) => {
             ' ' +
             '-' +
             ' ' +
-            extname(item.name).slice(1) +
+            (extname(item.name).slice(1)) +
             ' ' +
             '-' +
             ' ' +
@@ -31,4 +31,3 @@ readdir(pathFile, { withFileTypes: true }, (err, files) => {
   });
 });
 
-createDir();
